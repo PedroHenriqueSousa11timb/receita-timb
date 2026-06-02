@@ -6,10 +6,9 @@
 
 body {
     background-color: #f3e5d7;
-
 }
 
-body div > {
+body > div {
     background-color: #fff;
     max-width: 736px;
     margin-inline: auto;
@@ -24,8 +23,8 @@ div img {
     margin-bottom: 40px;
 }
 
-h1,h2 {
-    font-family: 'Lora', sefirf;
+h1, h2 {
+    font-family: 'Lora', serif;
 }
 
 h1 {
@@ -35,13 +34,14 @@ h1 {
     margin-bottom: 24px;
 }
 
-p, li, th, td{
-font-family: 'Outfit', sans-serif;
+p, li, th, td {
+    font-family: 'Outfit', sans-serif;
+}
 
 p {
-color: #5f564d;
-line-height: 150%;
-margin-bottom: 32px;
+    color: #5f564d;
+    line-height: 150%;
+    margin-bottom: 32px;
 }
 
 .tempo {
@@ -58,7 +58,6 @@ margin-bottom: 32px;
     font-family: 'Outfit', sans-serif;
     color: #7a284e;
     margin-bottom: 16px;
-
 }
 
 li {
@@ -67,7 +66,7 @@ li {
     line-height: 150%;
 }
 
-li + li{
+li + li {
     margin-top: 8px;
 }
 
@@ -78,10 +77,6 @@ ol, ul {
 .tempo li::marker {
     color: #7a284e;
     font-size: 12px;
-}
-
-li {
-    padding-left: 10px;
 }
 
 h2 {
@@ -101,7 +96,7 @@ hr {
     margin-block: 32px;
 }
 
-.modo li:: marker {
+.modo li::marker {
     color: #854632;
     font-weight: 700;
 }
@@ -112,40 +107,31 @@ hr {
 
 table {
     width: 100%;
+    border-collapse: collapse; /* Ajuda a alinhar as bordas da tabela */
 }
 
 th, td {
     border-bottom: 1px solid #e3ddd7;
-    width: 100%;
+    padding-block: 12px;
 }
 
 tr {
     display: flex;
-}
-
-tr {
     text-align: left;
-    padding-left: 32px;
-    font-weight: 400;
     color: #5f564d;
     line-height: 150%;
+}
+
+th {
+    font-weight: 400;
+    width: 50%; /* Garante divisão igual entre colunas */
 }
 
 td {
     padding-left: 16px;
     font-weight: 700;
     color: #854632;
-    line-height: 150%;
-}
-
-tr + tr th,
-tr + tr td {
-    padding-block: 12px;
-}
-
-tr:nth-of-type(1) th,
-tr:nth-of-type(1) td {
-    padding-bottom: 12px;
+    width: 50%;
 }
 
 tr:nth-of-type(4) th,
